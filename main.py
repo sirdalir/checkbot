@@ -1,14 +1,13 @@
 import logging
 import telegram
 from telegram.ext import Filters, Updater, MessageHandler
-from settings import BOT_TOKEN
+from settings import TOKEN
 
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TOKEN = 'TOKEN'
 bot = telegram.Bot(TOKEN)
 
 
